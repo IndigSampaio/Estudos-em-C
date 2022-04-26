@@ -1,0 +1,32 @@
+/* A Fatec precisa de um sistema que controle os 
+resultados dos projetos apresentados pelos alunos naTecnoFatec.*/
+
+// INTRO
+
+/*
+Mostre o menu, receba a opção escolhida e execute as instruções correspondente:  
+Somente finalize se a opção digitada for ‘S’. 
+*/
+ 
+ /* PARTE 1
+ Se o usuário digitar o número‘E’:
+ O programa deve receber e armazenar num vetor as notas atribuídas pelos 1000 alunos, 
+ eferente a avaliação do evento. As notas digitadas devem ser de 0 a 10.  */
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main()
+{
+	
+	char opc;
+	
+	printf("Digite a opção desejada\n");
+	printf("E - Notas do evento - alunos\nP - Notas dos projetos - juizes\nS - sair\n");
+	printf("Digite a opcao: ");
+	scanf("%c", &opc);
+	
+	opc = toupper(opc);
+
+	return 0;
+}
